@@ -16,7 +16,9 @@ No paid APIs, and no data leaves your machine: embeddings run on Hugging Face Se
 
 | Querying a resume | Querying a research paper |
 |---|---|
-| ![Resume Q&A](assets/demo_resume.png) | ![Paper Q&A](assets/demo_attention.png) |
+| ![Resume Q&A](<img width="1710" height="955" alt="Screenshot 2026-10-15 at 7 58 22 PM" src="https://github.com/user-attachments/assets/e1ede5eb-e980-4f8a-9f40-11b59b34e91c" />
+) | ![Paper Q&A](<img width="1710" height="846" alt="Screenshot 2026-10-15 at 7 58 31 PM" src="https://github.com/user-attachments/assets/97fd91bc-28d4-4ce2-aca7-514eba4ed226" />
+) |
 
 *Two documents of very different types (a 1-page resume and the "Attention Is All You Need" paper) indexed together. The assistant retrieves the right one for each question.*
 
