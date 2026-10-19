@@ -82,40 +82,6 @@ flowchart LR
 - **Strict prompting.** The model is told to use *only* the provided context and to say "Not found" otherwise. This trades some flexibility for trustworthiness.
 - **FAISS over a hosted vector DB.** No server to run, and the index saves to a single folder, which is ideal for a self-contained app.
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.10+
-- [Ollama](https://ollama.com/) installed and running
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/<your-username>/rag-knowledge-assistant.git
-cd rag-knowledge-assistant
-```
-
-### 2. Install dependencies
-```bash
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 3. Pull the LLM
-```bash
-ollama pull llama3
-```
-
-### 4. Run the app
-```bash
-streamlit run app.py
-```
-
-Open `http://localhost:8501`, upload documents in the sidebar, click **Index Uploaded Files**, and start asking questions.
-
----
 
 ## 📁 Project Structure
 
@@ -130,15 +96,6 @@ rag-knowledge-assistant/
 
 ---
 
-## 💡 Example Questions
-
-| Document | Question | Result |
-|---|---|---|
-| Resume (PDF) | *"What are the skills mentioned in the resume?"* | Structured list of all technical & business skills |
-| *Attention Is All You Need* (PDF) | *"Explain the attention"* | Definition of attention as a query/key-value mapping, pulled from the paper |
-
----
-
 ## 🔮 Limitations & Future Work
 
 - [ ] **Incremental indexing**: add new uploads to the existing index instead of reusing the old one
@@ -150,10 +107,5 @@ rag-knowledge-assistant/
 - [ ] **Model selector**: choose between Ollama models from the sidebar
 
 ---
-
-## 👩‍💻 Author
-
-**Himani Singh**
-[LinkedIn](https://linkedin.com/in/<your-profile>) · [GitHub](https://github.com/<your-username>) · [Email](mailto:<your-email>)
 
 If you found this useful, consider giving it a ⭐!
